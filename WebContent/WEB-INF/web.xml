@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  	<servlet>
+		<servlet-name>ProductController</servlet-name>
+		<servlet-class>mvc.controller.ProductController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MemberController</servlet-name>
+		<servlet-class>mvc.controller.MemberController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemberController</servlet-name>
+		<url-pattern>*.me</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ReservationController</servlet-name>
+		<servlet-class>mvc.controller.ReservationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReservationController</servlet-name>
+		<url-pattern>*.re</url-pattern>
+	</servlet-mapping>
+</web-app>
